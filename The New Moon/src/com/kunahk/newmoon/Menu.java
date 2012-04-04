@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class Menu extends ListActivity {
 
@@ -32,6 +33,7 @@ public class Menu extends ListActivity {
 		Intent ourIntent = new Intent(Menu.this,ourClass);
 		startActivity(ourIntent);
 		} catch(ClassNotFoundException e){
+			Toast.makeText(this, "Hello", 15)
 			e.printStackTrace();
 		}
 	}
