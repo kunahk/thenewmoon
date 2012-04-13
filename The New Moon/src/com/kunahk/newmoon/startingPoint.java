@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class startingPoint extends Activity {
 	/** Called when the activity is first created. */
@@ -27,6 +28,7 @@ public class startingPoint extends Activity {
 			public void onClick(View v) {
 				counter = counter +1;
 				display.setText("Your total is " + counter);
+				Toast.makeText(getApplication(), "Hello", 25); //does not work
 			}
 		});
 
