@@ -33,7 +33,7 @@ public class Menu extends ListActivity {
 		Intent ourIntent = new Intent(Menu.this,ourClass);
 		startActivity(ourIntent);
 		} catch(ClassNotFoundException e){
-			Toast.makeText(this, "Hello", 15)
+			Toast.makeText(this, "Hello", 15);
 			e.printStackTrace();
 		}
 	}
